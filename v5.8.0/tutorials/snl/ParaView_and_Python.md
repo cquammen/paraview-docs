@@ -22,46 +22,40 @@ A simple Python toy example within ParaView
 -   Start **ParaView**.
 -   Start the Python Interpreter **Tools → Python Shell**
 
-:   Notes
+   Notes
 
-    :   You can copy commands from elsewhere and paste them into the
+    -   You can copy commands from elsewhere and paste them into the
         Python Shell.
-    :   Python is case sensitive. Be sure to use correct capitalization
+    -   Python is case sensitive. Be sure to use correct capitalization
         as shown below.
-    :   Python is indent sensitive. Be sure to not indent, as shown
+    -   Python is indent sensitive. Be sure to not indent, as shown
         below.
 
-<!-- -->
+   Lets create and display a sphere.
 
-:   Lets create and display a sphere.
+    -   (Type the following into the Python Shell)
 
-    :   (Type the following into the Python Shell)
+```
+sphere=Sphere()
+Show()
+Render()
+```
 
-        :   **sphere=Sphere()**
-        :   **Show()**
-        :   **Render()**
-
-<!-- -->
-
-:   We have now created a sphere in the pipeline, turned on it\'s
+ -   We have now created a sphere in the pipeline, turned on it's
     visibility, and re-rendered.
 
-<!-- -->
-
-:   Next, lets add a shrink filter. We hide the sphere, add the shrink
+-   Next, lets add a shrink filter. We hide the sphere, add the shrink
     filter, and re-render.
 
-    :
+```
+Hide()
+Render()
+shrink=Shrink()
+Show()
+Render()
+```
 
-        :   **Hide()**
-        :   **Render()**
-        :   **shrink=Shrink()**
-        :   **Show()**
-        :   **Render()**
-
-<!-- -->
-
-:   ParaView will allow us to use either the GUI controls or Python. For
+-   ParaView will allow us to use either the GUI controls or Python. For
     instance:
 
     :   Select the Sphere in the pipeline browser.
